@@ -76,13 +76,21 @@ public class Control extends HttpServlet {
 		
 		try {
 			c1=cr1.obtenerUnContacto(c1.getId());
-			request.setAttribute("c1", c1);
+			if (c1.getNombre()!=null) {
+				request.setAttribute("c1", c1);
+				RequestDispatcher rq=request.getRequestDispatcher("/mostraruno.jsp");
+				rq.forward(request, response);
+			} else {
+				request.setAttribute("mensaje", "El Id introducido no esta en la agenda.");
+				RequestDispatcher rq=request.getRequestDispatcher("/mostrar.jsp");
+				rq.forward(request, response);
+			}
+			
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		RequestDispatcher rq=request.getRequestDispatcher("/mostraruno.jsp");
-		rq.forward(request, response);
+
 	}
 	private void modificarContacto(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
