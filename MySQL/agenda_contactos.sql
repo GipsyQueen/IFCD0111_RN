@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `agenda` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
+USE `agenda`;
 -- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
 --
 -- Host: localhost    Database: agenda
@@ -37,9 +39,17 @@ CREATE TABLE `contactos` (
 
 LOCK TABLES `contactos` WRITE;
 /*!40000 ALTER TABLE `contactos` DISABLE KEYS */;
-INSERT INTO `contactos` VALUES (1,'Ana','anaborregan@gmail.com','648999222'),(2,'Raquel','rachel.lo86@hotmail.com','650225500'),(3,'Aurelio','cacafuti@gmail.com','640523615');
+INSERT INTO `contactos` VALUES (1,'Ana','anaborregan@gmail.com','648999222'),(2,'Raquel','rachel.lo86@hotmail.com','650225500');
 /*!40000 ALTER TABLE `contactos` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'agenda'
+--
+
+--
+-- Dumping routines for database 'agenda'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -50,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-30 17:30:25
+-- Dump completed on 2020-01-30 19:12:46

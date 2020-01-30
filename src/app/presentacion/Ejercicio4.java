@@ -6,8 +6,8 @@ public class Ejercicio4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// 4. Construir un programa en Java que permita encontra el número mayor
-		// y él número menor de una serie de números ingresados por tecclado, como 
+		// 4. Construir un programa en Java que permita encontrar el número mayor
+		// y él número menor de una serie de números ingresados por teclado, como 
 		// primera entrada se le dará el tamaño del arreglo y luego los datos, también
 		// se debe indicar cuantas veces se repiten tanto el mayor como el menor.
 		
